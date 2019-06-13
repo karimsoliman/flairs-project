@@ -23,7 +23,7 @@ public class countryController {
 		return new Date();
 	}
 	
-	@RequestMapping(value = "/user/{code}", method = RequestMethod.GET)
+	@RequestMapping(value = "/country/{code}", method = RequestMethod.GET)
 	public Country getCountry(@PathVariable("code") String code) {
 		return countryDao.getCountry(code);
 	}
